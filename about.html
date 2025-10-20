@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Norel’s Café | About & Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--cream:#fffaf5;
+--coffee:#6f4e37;
+--coffee-light:#a67b5b;
+--yellow:#f9c74f;
+--radius:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+body{background:var(--cream);color:var(--coffee);}
+header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+nav{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.5rem;}
+.logo{font-family:'Pacifico',cursive;font-size:2rem;color:var(--coffee);}
+.menu{display:flex;gap:1.5rem;list-style:none;font-weight:500;}
+.menu a:hover{color:var(--yellow);}
+main{max-width:1000px;margin:auto;padding:2.5rem 1.5rem;}
+h2{margin-bottom:1rem;font-size:1.8rem;}
+.two-col{display:grid;gap:2rem;grid-template-columns:1fr 1fr;align-items:start;}
+.card{background:#fff;padding:1.5rem;border-radius:var(--radius);box-shadow:0 4px 12px rgba(0,0,0,.06);}
+.map{width:100%;height:260px;border:0;border-radius:var(--radius);}
+footer{text-align:center;padding:2rem .5rem;font-size:.85rem;color:var(--coffee-light);}
+@media(max-width:700px){.two-col{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">Norel’s Café</div>
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Menu</a></li>
+<li><a href="about.html">About / Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<div class="two-col">
+<div>
+<h2>Our Story</h2>
+<p>
+<b>Norel's Café</b> is more than a coffee shop; it is the culmination of a lifelong personal dream and a dedication to the craft. Named for and founded by me, <b>John Norel M. Cabubas</b>, this venture started not in a commercial kitchen, but with a simple, genuine passion for exceptional coffee and fresh-baked goods, nurtured right in my home.
+</p>
+<p>
+We source local beans, bake daily, and keep our community at the heart of every cup.
+Drop by and taste the warmth!
+</p>
+</div>
+
+<div class="card">
+<h2>Contact Us</h2>
+<p><strong>Address:</strong><br>123 Magiting St., Brgy. Central, Quezon City</p>
+
+<p><strong>Phone:</strong><br><a href="tel:+639123456789">+63 912 345 6789</a></p>
+<p><strong>Email:</strong><br><a href="mailto:hello@norelcafe.com">hello@norelcafe.com</a></p>
+
+<p><strong>Store Hours:</strong><br>Mon – Sat 7:00 am – 9:00 pm<br>Sun 8:00 am – 8:00 pm</p>
+
+</div>
+</div>
+
+<div style="margin-top:2.5rem;">
+<h2>Find Us</h2>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.67!2d121.04!3d14.64!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM4JzI2LjQiTiAxMjHCsDAyJzI5LjcnRQ!5e0!3m2!1sen!2sph!4v1234567890"></iframe>
+</div>
+</main>
+
+<footer>© <span id="yr"></span> Norel’s Café. All rights reserved.</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
