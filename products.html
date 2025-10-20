@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Norel’s Café | Menu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--cream:#fffaf5;
+--coffee:#6f4e37;
+--coffee-light:#a67b5b;
+--yellow:#f9c74f;
+--radius:12px;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+body{background:var(--cream);color:var(--coffee);}
+header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+nav{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.5rem;}
+.logo{font-family:'Pacifico',cursive;font-size:2rem;color:var(--coffee);}
+.menu{display:flex;gap:1.5rem;list-style:none;font-weight:500;}
+.menu a:hover{color:var(--yellow);}
+main{max-width:1000px;margin:auto;padding:2.5rem 1.5rem;}
+h2{text-align:center;margin-bottom:2rem;font-size:2rem;}
+.grid{display:grid;gap:1.8rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));}
+.item{background:#fff;border-radius:var(--radius);box-shadow:0px 4px 12px rgba(0,0,0,.06);overflow:hidden;display:flex;flex-direction:column;}
+.item img{width:100%;height:280px;object-fit:cover;}
+.info{padding:1rem 1.2rem 1.5rem;flex:1;display:flex;flex-direction:column;}
+.name{font-weight:600;font-size:1.1rem;margin-bottom:.3rem;}
+.desc{font-size:.9rem;color:var(--coffee-light);margin-bottom:.6rem;flex:1;}
+.price{font-size:1rem;font-weight:600;}
+footer{text-align:center;padding:2rem .5rem;font-size:.85rem;color:var(--coffee-light);}
+@media(max-width:600px){.menu{flex-direction:column;gap:.5rem;}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">Norel’s Café</div>
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Menu</a></li>
+<li><a href="about.html">About / Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h2>Our Menu</h2>
+<div class="grid">
+<div class="item">
+<img src="coffee.png">
+<div class="info">
+<div class="name">Coffee (Hot)</div>
+<div class="desc">Rich, smooth arabica brewed to perfection.</div>
+<div class="price">₱50.00</div>
+</div>
+</div>
+
+<div class="item">
+<img src="milktea.png">
+<div class="info">
+<div class="name">Milk Tea</div>
+<div class="desc">Creamy black tea with chewy tapioca pearls.</div>
+<div class="price">₱80.00</div>
+</div>
+</div>
+
+<div class="item">
+<img src="pastries.png">
+<div class="info">
+<div class="name">Pastries</div>
+<div class="desc">Buttery, flaky croissants & Danish baked fresh daily.</div>
+<div class="price">₱40.00</div>
+</div>
+</div>
+
+<div class="item">
+<img src="sandwich.png">
+<div class="info">
+<div class="name">Sandwich</div>
+<div class="desc">Toasted bread with hearty fillings & garden greens.</div>
+<div class="price">₱65.00</div>
+</div>
+</div>
+
+<div class="item">
+<img src="smoothies.png">
+<div class="info">
+<div class="name">Smoothies</div>
+<div class="desc">Cold-blended real fruit, no syrups.</div>
+<div class="price">₱100.00</div>
+</div>
+</div>
+</div>
+</main>
+
+<footer>© <span id="yr"></span> Norel’s Café. All rights reserved.</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Norel’s Café | Home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--cream:#fffaf5;
+--coffee:#6f4e37;
+--coffee-light:#a67b5b;
+--yellow:#f9c74f;
+--radius:14px;
+}
+
+{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif;}
+
+body{background:var(--cream);color:var(--coffee);}
+
+header{background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+
+nav{max-width:1000px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:1.2rem 1.5rem;}
+
+.logo{font-family:'Pacifico',cursive;font-size:2rem;color:var(--coffee);}
+
+.menu{display:flex;gap:1.5rem;list-style:none;font-weight:500;}
+
+.menu a:hover{color:var(--yellow);}
+
+main{max-width:1000px;margin:auto;padding:3rem 1.5rem;text-align:center;}
+
+h1{font-size:clamp(2.2rem,5vw,3.5rem);}
+
+.tagline{font-size:1.2rem;margin:1rem auto 2rem;max-width:600px;}
+
+.btn{display:inline-block;background:var(--coffee);color:#fff;padding:.8rem 2rem;border-radius:var(--radius);transition:.3s;}
+
+.btn:hover{background:var(--coffee-light);}
+
+footer{text-align:center;padding:2rem .5rem;font-size:.85rem;color:var(--coffee-light);}
+
+@media(max-width:600px){.menu{flex-direction:column;gap:.5rem;}}
+</style>
+
+<base target="_blank">
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">Norel’s Café</div>
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Menu</a></li>
+<li><a href="about.html">About / Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+<h1>Taste the Warmth, Feel the Love</h1>
+<p class="tagline">
+Your daily dose of delight—hand-crafted coffee, freshly baked pastries,
+and creamy milk tea served in a cozy neighborhood space.
+</p>
+
+<a href="products.html" class="btn">See Our Menu</a>
+</main>
+
+<footer>© <span id="yr"></span> Norel’s Café. All rights reserved.</footer>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
